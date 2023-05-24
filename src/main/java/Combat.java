@@ -33,8 +33,13 @@ public class Combat {
                 case 2:
                     // Utilisation d'un objet
                     System.out.println("Choisissez un objet à utiliser :");
-                    for (Objet objet : hero.getInventaire()) {
-                        System.out.println(objet.toString());
+                    for (int i = 0; i < hero.getInventaire().size(); i++) {
+                        System.out.println(i + ": " + hero.getInventaire().get(i));
+                    }
+                    int choixObj = scanner.nextInt();
+                    switch (choixObj) {
+                        case 1:
+                            
                     }
 
                     break;
@@ -65,4 +70,3 @@ public class Combat {
         }
     }
 }
-
