@@ -37,10 +37,7 @@ public class Hero extends Personnage {
     // Surcharge de la méthode toString() pour afficher les informations du héros
     @Override
     public String toString() {
-        return super.toString() + "\nInventaire : " ;
-        for (int index = 0; index < inventaire.size() ; index++) {
-           System.out.println("- " + index + this.inventaire.get(index));
-        }
+        return super.toString() + "\nInventaire : " + inventaire;
 
     }
 }
